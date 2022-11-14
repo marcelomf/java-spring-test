@@ -15,7 +15,12 @@ public class PessoaServiceImpl implements PessoaService {
     private PessoaRepository repository;
 
     @Override
-    public Pessoa create(Pessoa pessoa) {
+    public Pessoa create(Pessoa pessoa) throws Exception {
+
+        if(pessoa.getUsuario().isEmpty() || pessoa.getUsuario().isEmpty()) {
+            throw new Exception("Usuário e senha são obrigatórios!");
+        }
+
         return repository.save(pessoa);
     }
 

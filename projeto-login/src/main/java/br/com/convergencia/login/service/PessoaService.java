@@ -6,7 +6,7 @@ import br.com.convergencia.login.domain.Pessoa;
 
 public interface PessoaService {
 
-    Pessoa create(Pessoa usuario);
+    Pessoa create(Pessoa usuario) throws Exception;
 
     Pessoa delete(int id);
 

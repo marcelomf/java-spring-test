@@ -15,7 +15,7 @@ public class PessoaController {
     private PessoaService pessoaService;
 
     @PostMapping("/pessoas")
-    public Pessoa create(@RequestBody Pessoa pessoa){
+    public Pessoa create(@RequestBody Pessoa pessoa) throws Exception{
         return pessoaService.create(pessoa);
     }
 
