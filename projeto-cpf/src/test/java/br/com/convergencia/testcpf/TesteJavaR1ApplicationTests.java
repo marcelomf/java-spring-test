@@ -1,10 +1,10 @@
-package br.com.convergencia.testejavar1;
+package br.com.convergencia.testcpf;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TesteJavaR1ApplicationTests {
+class TestCpfApplicationTests {
 
 	@Test
 	void contextLoads() {

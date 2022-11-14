@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.convergencia</groupId>
-	<artifactId>teste-java-r1</artifactId>
+	<artifactId>projeto-cpf</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>teste-java-r1</name>
+	<name>projeto-cpf</name>
 	<description>Teste de nivel para desenvolvedores Convergencia</description>
 	<properties>
 		<java.version>17</java.version>
