@@ -29,11 +29,24 @@ public class Pessoa {
         return nome;
     }
 
-    public void setNome(String nome) {
+    public void setNome(String nome) throws Exception {
+        if(nome.length() <= 2) {
+            throw new Exception("Nome inválido! Deve conter pelo menos 3 caracteres.");
+        }
         this.nome = nome;
     }
 
-    public void setCpf(String cpf) {
+    public String getCpf() {
+        return this.cpf;
+    }
+
+    public void setCpf(String cpf) throws Exception {
+        if(cpf.length() <= 7) {
+            throw new Exception("Cpf inválido! Deve conter pelo menos 8 caracteres.");
+        }
+        if(!cpf.matches("\\d+")) {
+            throw new Exception("Cpf inválido! Deve conter apenas números.");
+        }
         this.cpf = cpf;
     }
 
@@ -41,7 +54,10 @@ public class Pessoa {
         return situacao;
     }
 
-    public void setSituacao(String situacao) {
+    public void setSituacao(String situacao) throws Exception {
+        if(!situacao.matches("ativo|inativo")) {
+            throw new Exception("Situação inválida! Deve ser ativo ou inativo.");
+        }
         this.situacao = situacao;
     }
 }
