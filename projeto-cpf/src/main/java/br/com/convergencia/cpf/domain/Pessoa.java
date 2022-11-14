@@ -1,4 +1,4 @@
-package br.com.convergencia.cpf;
+package br.com.convergencia.cpf.domain;
 
 import javax.persistence.*;
 

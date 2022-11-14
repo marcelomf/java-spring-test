@@ -1,7 +1,10 @@
-package br.com.convergencia.cpf;
+package br.com.convergencia.cpf.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import br.com.convergencia.cpf.domain.Pessoa;
+import br.com.convergencia.cpf.service.PessoaService;
 
 import java.util.List;
 

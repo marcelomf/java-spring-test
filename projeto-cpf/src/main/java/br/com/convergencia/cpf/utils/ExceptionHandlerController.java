@@ -1,4 +1,4 @@
-package br.com.convergencia.cpf;
+package br.com.convergencia.cpf.utils;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

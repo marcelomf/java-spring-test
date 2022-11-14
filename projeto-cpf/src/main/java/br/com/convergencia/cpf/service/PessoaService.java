@@ -1,6 +1,8 @@
-package br.com.convergencia.cpf;
+package br.com.convergencia.cpf.service;
 
 import java.util.List;
+
+import br.com.convergencia.cpf.domain.Pessoa;
 
 public interface PessoaService {
 

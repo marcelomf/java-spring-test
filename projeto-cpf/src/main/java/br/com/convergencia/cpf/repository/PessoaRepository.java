@@ -1,6 +1,8 @@
-package br.com.convergencia.cpf;
+package br.com.convergencia.cpf.repository;
 
 import org.springframework.data.jpa.repository.*;
+
+import br.com.convergencia.cpf.domain.Pessoa;
 
 import java.util.List;
 

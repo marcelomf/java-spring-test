@@ -1,7 +1,10 @@
-package br.com.convergencia.cpf;
+package br.com.convergencia.cpf.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import br.com.convergencia.cpf.domain.Pessoa;
+import br.com.convergencia.cpf.repository.PessoaRepository;
 
 import java.util.List;
 
