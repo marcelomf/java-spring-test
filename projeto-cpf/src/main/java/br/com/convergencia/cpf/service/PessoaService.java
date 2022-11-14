@@ -14,5 +14,7 @@ public interface PessoaService {
 
     Pessoa findById(int id);
 
+    Pessoa findByCpf(String cpf);
+
     Pessoa update(int id, Pessoa usuario);
 }

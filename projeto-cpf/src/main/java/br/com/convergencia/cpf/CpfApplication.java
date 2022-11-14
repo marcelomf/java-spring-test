@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Import;
 import br.com.convergencia.cpf.utils.ExceptionHandlerController;
 
 @SpringBootApplication
-@EnableJpaRepositories("br.com.convergencia.cpf")
+@EnableJpaRepositories("br.com.convergencia.cpf.repository")
 @Import(ExceptionHandlerController.class)
 public class CpfApplication {
 

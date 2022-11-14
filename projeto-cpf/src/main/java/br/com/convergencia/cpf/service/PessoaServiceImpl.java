@@ -38,6 +38,10 @@ public class PessoaServiceImpl implements PessoaService {
         return repository.findById(id);
     }
 
+    public Pessoa findByCpf(String cpf) {
+        return repository.findByCpf(cpf);
+    }
+
     @Override
     public Pessoa update(int id, Pessoa pessoa) {
         pessoa.setId(id);

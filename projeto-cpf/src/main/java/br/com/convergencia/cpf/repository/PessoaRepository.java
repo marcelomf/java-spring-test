@@ -14,5 +14,7 @@ public interface PessoaRepository extends JpaRepository<Pessoa, Integer> {
 
     Pessoa findById(int id);
 
+    Pessoa findByCpf(String cpf);
+
     Pessoa save(Pessoa pessoa);
 }

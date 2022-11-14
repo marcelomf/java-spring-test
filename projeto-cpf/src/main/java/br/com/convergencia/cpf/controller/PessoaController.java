@@ -24,6 +24,11 @@ public class PessoaController {
         return pessoaService.findById(id);
     }
 
+    @GetMapping("/pessoas/cpf/{cpf}")
+    public Pessoa findOne(@PathVariable("cpf") String cpf){
+        return pessoaService.findByCpf(cpf);
+    }
+
     @PutMapping("/pessoas/{id}")
     public Pessoa update(@PathVariable("id") int id, @RequestBody Pessoa usuario){
         return pessoaService.update(id, usuario);
