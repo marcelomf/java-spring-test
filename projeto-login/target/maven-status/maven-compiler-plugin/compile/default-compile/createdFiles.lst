@@ -1,0 +1,7 @@
+br/com/convergencia/login/service/PessoaServiceImpl.class
+br/com/convergencia/login/controller/PessoaController.class
+br/com/convergencia/login/repository/PessoaRepository.class
+br/com/convergencia/login/service/PessoaService.class
+br/com/convergencia/login/utils/ExceptionHandlerController.class
+br/com/convergencia/login/domain/Pessoa.class
+br/com/convergencia/login/LoginApplication.class

@@ -1,1 +1,7 @@
+br/com/convergencia/cpf/service/PessoaService.class
+br/com/convergencia/cpf/domain/Pessoa.class
+br/com/convergencia/cpf/repository/PessoaRepository.class
+br/com/convergencia/cpf/controller/PessoaController.class
+br/com/convergencia/cpf/service/PessoaServiceImpl.class
 br/com/convergencia/cpf/CpfApplication.class
+br/com/convergencia/cpf/utils/ExceptionHandlerController.class

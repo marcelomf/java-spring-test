@@ -22,7 +22,7 @@ public class PessoaServiceImpl implements PessoaService {
             throw new Exception("Usuário e senha são obrigatórios!");
         }
 
-        String uri = "http://localhost:8080/pessoas/cpf/"+pessoa.getCpf();
+        String uri = "http://appcpf:8080/pessoas/cpf/"+pessoa.getCpf();
         RestTemplate rest = new RestTemplate();
         Pessoa pessoaApi = rest.getForObject(uri, Pessoa.class);
 
