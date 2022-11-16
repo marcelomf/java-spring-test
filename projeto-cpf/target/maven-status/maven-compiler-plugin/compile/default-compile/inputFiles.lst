@@ -1,0 +1,7 @@
+/home/marcelo/Projetos/teste-java-r1/projeto-cpf/src/main/java/br/com/convergencia/cpf/domain/Pessoa.java
+/home/marcelo/Projetos/teste-java-r1/projeto-cpf/src/main/java/br/com/convergencia/cpf/utils/ExceptionHandlerController.java
+/home/marcelo/Projetos/teste-java-r1/projeto-cpf/src/main/java/br/com/convergencia/cpf/CpfApplication.java
+/home/marcelo/Projetos/teste-java-r1/projeto-cpf/src/main/java/br/com/convergencia/cpf/repository/PessoaRepository.java
+/home/marcelo/Projetos/teste-java-r1/projeto-cpf/src/main/java/br/com/convergencia/cpf/controller/PessoaController.java
+/home/marcelo/Projetos/teste-java-r1/projeto-cpf/src/main/java/br/com/convergencia/cpf/service/PessoaServiceImpl.java
+/home/marcelo/Projetos/teste-java-r1/projeto-cpf/src/main/java/br/com/convergencia/cpf/service/PessoaService.java

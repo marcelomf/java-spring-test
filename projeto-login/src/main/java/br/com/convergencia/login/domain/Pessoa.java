@@ -4,6 +4,8 @@ import java.security.MessageDigest;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Entity
 @Table(name = "pessoa")
 public class Pessoa {
@@ -20,6 +22,8 @@ public class Pessoa {
     private String usuario;
     @Column
     private String senha;
+    @Column
+    private String situacao;
 
     public int getId() {
         return id;
@@ -87,5 +91,13 @@ public class Pessoa {
             hexString.append(hex);
         }
         this.senha = hexString.toString();
+    }
+
+    public String getSituacao() {
+        return situacao;
+    }
+
+    public void setSituacao(String situacao) throws Exception {
+        this.situacao = situacao;
     }
 }

@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  appcpf:
+    #image: convergencia/cpf
+    build: ./projeto-cpf
+    #restart: unless-stopped
+    ports:
+      - 8080:8080
+    volumes:
+      - tmp:/tmp
+  applogin:
+    depends_on:
+      - appcpf
+    build: ./projeto-login
+    #restart: unless-stopped
+    ports:
+      - 8090:8090
+    stdin_open: true
+    tty: true
+    volumes:
+      - tmp2:/tmp
+
+volumes:
+  tmp:
+  tmp2:

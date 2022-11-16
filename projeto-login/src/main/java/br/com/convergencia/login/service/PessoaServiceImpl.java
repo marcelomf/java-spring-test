@@ -2,6 +2,7 @@ package br.com.convergencia.login.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import br.com.convergencia.login.domain.Pessoa;
 import br.com.convergencia.login.repository.PessoaRepository;
@@ -19,6 +20,14 @@ public class PessoaServiceImpl implements PessoaService {
 
         if(pessoa.getUsuario().isEmpty() || pessoa.getUsuario().isEmpty()) {
             throw new Exception("Usuário e senha são obrigatórios!");
+        }
+
+        String uri = "http://localhost:8080/pessoas/cpf/"+pessoa.getCpf();
+        RestTemplate rest = new RestTemplate();
+        Pessoa pessoaApi = rest.getForObject(uri, Pessoa.class);
+
+        if(!pessoaApi.getSituacao().equals("ativo")) {
+            throw new Exception("O CPF da pessoa deve estar ativo!");
         }
 
         return repository.save(pessoa);
